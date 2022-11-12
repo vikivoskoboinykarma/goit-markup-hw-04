@@ -29,7 +29,7 @@ ul {
   list-style: none;
 }
 
-p {
+p, h1, h2, h3, h4, h5 {
     margin: 0;
     padding: 0;
 }
@@ -177,7 +177,7 @@ margin-left: 50px;
 .senvelope-icon,
 .smartphone-icon{
   margin-right: 10px;
-  fill: var(--primary-text-color);
+  fill: currentColor;
 }
 
 .senvelope-icon:hover,
@@ -207,7 +207,7 @@ margin-left: 50px;
 .section-hero {
   background-color: var(--hero-background);
   text-align: center;
-  outline: 2px solid tomato;
+
 }
 
 /* section особливості*/
@@ -250,19 +250,19 @@ flex-basis: calc((100% - 90px) / 4);
   display: flex;
   margin-bottom: 30px;
   justify-content: center;
-  padding: 25px, 100px, 25px, 100px;
+
  height: 120px;
  align-items: center;
  background-color: var(--button-background-color);
 }
-
+/* padding: 25px 100px 25px 100px;
 .features-icon .icon{
   display: inline-block;
    margin: 0;
  align-items: center;
   justify-content: center;
  }
-
+*/
 
 .features .title {
     margin-top: 0;
@@ -373,12 +373,12 @@ margin-left: 30px;
   letter-spacing: 0.06em;
   border-radius: 4px;
   border: transparent;
-  
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .button:hover,
 .button:focus {
-  color: var(--second-accent-color);
+ 
   background-color: var(--button-background-hero);
 }
 
@@ -386,7 +386,7 @@ margin-left: 30px;
   display: flex;
   padding-bottom: 30px;
   margin-top: 16px;
-
+gap: 10px;
   list-style: none;
   flex-direction: row;
   align-items: center;
@@ -397,8 +397,8 @@ margin-left: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
-    margin-left: 5px;
-  margin-right: 5px;
+ 
+  cursor: pointer;
   list-style: none;
   border: none;
   width: 44px;
@@ -409,13 +409,12 @@ margin-left: 30px;
 
  .icons .icon{
   fill: currentColor;
-  margin-left: 10px;
-  margin-right: 10px;
   width: 20px;
   height: 20px;
 }
 
- .icons:hover{
+ .icons:hover,
+ .icons:focus {
   color: var(--primary-color);
   background-color: var(--accent-color);
  }
@@ -427,13 +426,16 @@ margin-right: 10px;
 margin-right: 0;
 }*/
 
+.section-clients .actions{
+ gap: 30px;
+ }
 
 .clients{
   display: flex;
   justify-content: center;
   align-items: center;
-    margin-left: 15px;
-  margin-right: 15px;
+  cursor: pointer;
+ 
   list-style: none;
   border: none;
   width: 170px;
@@ -448,11 +450,12 @@ border-radius: 4px;
   fill: currentColor;
 }
 
- .clients:hover{
+ .clients:hover,
+ .clients:focus {
   color: var(--accent-color);
   border: 1px solid #2196F3;
-border-radius: 4px;
- 
+
+
  }
  
 
@@ -515,8 +518,8 @@ color: var(--primary-color);
   display: flex;
   justify-content: center;
   align-items: center;
-    margin-left: 5px;
-  margin-right: 5px;
+
+  cursor: pointer;
   list-style: none;
   border: none;
   width: 44px;
@@ -528,11 +531,11 @@ color: var(--primary-color);
 
  .icons-footer .icon-footer{
   fill: currentColor;
-  margin-left: 10px;
-  margin-right: 10px;
+
 }
 
- .icons-footer:hover{
+ .icons-footer:hover,
+ .icons-footer:focus{
   color: var(--primary-color);
   background-color: var(--accent-color);
  }
@@ -613,11 +616,11 @@ margin-right: 0;
   }
 
 .progect-item .img{
-  padding: 0;
+
     display: block;
     width: 100%;
     height: auto;
-    border: transparent;
+  
 }
 
 /* width: 370px;
@@ -645,11 +648,11 @@ margin-right: 0;
   text-decoration: none;
 }
 .progect-title {
-  padding: 0;
-  margin-bottom: 0;
-  margin-top: 20px;
-  margin-left: 24px;
-  margin-right: 24px;
+ 
+  padding-bottom: 0;
+  padding-top: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
   color: var(--title-text-color);
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -659,11 +662,11 @@ margin-right: 0;
 }
 
 .progect-text {
- padding: 0;
-  margin-top: 4px;
-  margin-bottom: 20px;
-   margin-left: 24px;
-  margin-right: 24px;
+ margin: 0;
+  padding-top: 4px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
   color: var(--primary-text-color);
   font-family: "Roboto", sans-serif;
   
